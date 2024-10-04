@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-cover bg-center" style="background-image: url('nick-nice-ve-R7PCjJDk-unsplash.jpg');">
+    <div class="container mx-auto p-6">
+        <h1 class="text-3xl text-white text-center py-4 bg-opacity-50 bg-gray-900">Weather Dashboard</h1>
+        <div class="flex gap-4 justify-center">
+            <div class="weather-input w-full max-w-md">
+                <input type="text" class="city-input w-full h-12 px-4 border rounded" placeholder="Enter city name" />
+                <button class="search-btn w-full h-12 bg-blue-600 text-white rounded">Search</button>
+                <div class="separator mt-4 flex items-center">
+                    <div class="flex-grow border-t border-gray-300"></div>
+                    <span class="mx-2 text-gray-600">or</span>
+                    <div class="flex-grow border-t border-gray-300"></div>
+                </div>
+                <button class="location-btn w-full h-12 mt-4 bg-gray-600 text-white rounded">Use Current Location</button>
+                <div class="recent-cities">
+                    <select id="recent-cities-dropdown" class="w-full mt-4 h-12 bg-gray-600 text-white rounded">
+                        <option value="" disabled selected>Select a recently searched city</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="current-weather mt-6 bg-gray-800 bg-opacity-70 p-4 rounded"></div>
+        <div class="weather-cards mt-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,17 @@
+# Weather Dashboard
+
+A weather forecasting dashboard using JavaScript and Tailwind CSS.
+
+## Setup Instructions
+
+1. Clone the repository.
+2. Open `index.html` in your web browser.
+3. Create an account on OpenWeatherMap and replace the API key in `script.js`.
+4. Enjoy the weather forecasting app!
+
+## Features
+
+- Search for weather forecasts by city name.
+- Get weather data based on your current location.
+- View 5-day weather forecasts.
+- Recently searched cities dropdown.
